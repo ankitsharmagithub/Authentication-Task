@@ -16,7 +16,7 @@ const Register = () => {
         password: "",
         age: ""
     });
-    console.log('inpval', inpval)
+    
 
     const setVal = (e) => {
         // console.log(e.target.value);

@@ -16,14 +16,13 @@ function App() {
   const [data, setData] = useState(false);
 
   const { logindata, setLoginData } = useContext(LoginContext);
-  console.log('logindata', logindata)
 
 
   const history = useNavigate();
 
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
-    console.log('token', token)
+   
 
     const res = await fetch("/validuser", {
       method: "GET",
@@ -34,7 +33,7 @@ function App() {
     });
 
     const data = await res.json();
-    console.log('data', res)
+    
 
     if (data.status === 401 || !data) {
       console.log("user not valid");
