@@ -127,7 +127,7 @@ const Register = () => {
                             </div>
                         </div>
                         <div className="form_input">
-                            <label htmlFor="age">Age</label>
+                            <label htmlFor="age">D.O.B</label>
                             <input type="date" onChange={setVal} value={inpval.age} name="age" id="age" placeholder='Enter Your Age' />
                         </div>
 
