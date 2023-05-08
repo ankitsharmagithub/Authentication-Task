@@ -105,8 +105,7 @@ const Register = () => {
                 <div className="form_data">
                     <div className="form_heading">
                         <h1>Sign Up</h1>
-                        <p style={{ textAlign: "center" }}>We are glad that you will be using Project Cloud to manage <br />
-                            your tasks! We hope that you will get like it.</p>
+                        <p style={{ textAlign: "center" }}>We are glad that you will be using Project <br/> We hope that you will get like it.</p>
                     </div>
 
                     <form>
