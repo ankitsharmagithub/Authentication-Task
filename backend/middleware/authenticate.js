@@ -6,8 +6,7 @@ const keysecret = "sayyedkamranalivbaedvebsderthner"
 const authenticate = async(req,res,next)=>{
 
     try {
-        const token = req.headers.authorization;
-        
+        const token = req.headers.authorization; 
         const verifytoken = jwt.verify(token,keysecret);
         
         const rootUser = await userdb.findOne({_id:verifytoken._id});
